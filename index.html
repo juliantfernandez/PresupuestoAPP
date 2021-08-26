@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Presupuesto APP</title>
+</head>
+<body>
+    <header> 
+    <nav class="navbar navbar-light bg-pink">
+        <div class="container-fluid">
+          <a class="navbar-brand title-nav" href="#">
+            <img src="https://img.icons8.com/officel/2x/pig.png" alt="" width="38" height="auto" class="d-inline-block align-text-top">
+            Presupuesto APP
+          </a>
+          <p class="design">Design by Julian Fernandez</p>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <div>
+        <div class="main-carousel"> 
+        <img src="media/pig2.svg" class="pig-main" alt="pig bank">
+        <h2 class="main-carousel-letters">Calculá<br>Tu<br>Presupuesto<br>
+          <a href="#calcular" class="btn-calcular">Calcular</a></h2>
+         </div>
+
+    <section class="section-calcular container" id="calcular">
+
+        <h2 class="section-calcular-title">Calculadora de Presupuesto!</h2>
+        <br>
+        <label for="number">Ingresa Tu Presupuesto</label><br><br>
+        <input class="ingresarpresupuesto" type="number" id="presupuestoIngresado"><br><br><button class="btn-calculadora" onclick="Add1()">Agregar</button>
+
+        <br>
+        <label for="presupuesto">Presupuesto</label>
+        <div id="presupuesto"></div>
+
+        <br>
+        <label for="restante">Restante</label>
+        <div id="restante"></div>
+
+      <br>
+      <label for="tugasto">Agrega Tus Gastos</label><br>
+      <input type="text"  class="ingresarpresupuesto"  id="nombreGasto" placeholder="Ej: SUBE"><br><br>
+      <button class="btn-calculadora" onclick="Add2()">Agregar</button><br>
+
+      <br>
+      <label for="valor">Valor</label><br>
+      <input type="number"  class="ingresarpresupuesto" id="valorGasto" placeholder="Ej: 500">
+      <br><br>
+
+      <button class="btn-calculadora" onclick="Calcular()">Calcular</button><br><br>
+      <div id="valorYgasto"></div>
+
+      <div id="resultadoFinal"></div>
+
+    </section>
+    </main>
+    <br>
+    <br>
+    <h3 class="design2">Design x Julian Fernandez</h3>
+    <br>
+    <br>
+
+    <footer>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
